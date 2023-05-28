@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png" type="image/icontype">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            U K G
+        </title>
+    </head>
+    <body>
+        <div class="Header">
+           <h1>JOB POTENTIAL</h1>
+            <h2>ESTIMATOR</h2>
+        </div>
+        <div class="city">
+            <label>Select City</label><br>
+            <select class="s1" id="sel1" >
+                <option>All</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangarole">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </div>
+        <div class="category" id="c1">
+            <label>Select Category</label><br>
+            <select class="s2" onchange="cou(this)" id="sel2">
+                <option>All</option>
+                <option value="Btech">Btech</option>
+                <option value="Mtech">Mtech</option>
+                <option value="Bpharm">B.Pharmacy</option>
+            </select>
+        </div>
+        <div class="course">
+            <label>Select Course</label><br>
+            <select id="Btech" class="s3">
+                <option>All</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECH">MECH</option>
+            </select>
+            <select id="Mtech" class="s4" >
+                <option>All</option>
+                <option value="AI&ML">AI&ML</option>
+                <option value="CS">CS</option>
+                <option value="DS">DS</option>
+                <option value="IOT">IOT</option>
+            </select>
+            <select id="Bpharm" class="s5">
+                <option>All</option>
+                <option value="Medical Chemistry">Medical Chemistry</option>
+                <option value="Pharmaceutical Engineering">Pharmaceutical Engineering</option>
+                <option value="Drugs and Medicines">Drugs and Medicines</option>
+            </select>
+        </div>
+        <div id="butt">
+            <button type="button" class="Submit" onclick="ValCh()">Submit</button>
+        </div>
+        <div id="ob1">
+            <h3 id="coursename">Course Name</h3>
+            <label class="l1">Total Students:</label>
+            <label id="stu1"></label><br>
+            <label class="l2">Total Vacancies:</label>
+            <label id="stu2"></label><br>
+            <label class="l3">Estimated Job Potential:</label>
+            <div class="pie"  id ="pie1"style="--p:20;--b:10px;--c:purple;">20%</div><br>
+        </div>
+        <div class="owner">
+            <label>© U K G</label>
+
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
+
+ 
